@@ -1,0 +1,146 @@
+2025-03-12 00:55:09,997 - INFO - CSV file loaded successfully.
+2025-03-12 00:55:12,095 - INFO - Data from C:/Users/ranes/Desktop/DMML/data/transactions.csv loaded into transactions in customer_churn.db
+2025-03-13 12:12:41,844 - INFO - Ingestion process started.
+2025-03-13 12:12:44,784 - INFO - Loaded 270953 rows from CSV file 'C:\Users\ranes\Desktop\DMML\data\ecom_transactions.csv'.
+2025-03-13 12:12:49,077 - INFO - Loaded 270956 rows from SQLite table 'transactions'.
+2025-03-13 12:12:50,343 - INFO - Full Outer Joined data has 536641 rows.
+2025-03-13 12:12:53,990 - INFO - Saved 536641 rows to CSV file 'C:\Users\ranes\Desktop\DMML\data\merged_data.csv'.
+2025-03-13 12:12:53,990 - INFO - Ingestion process completed successfully.
+2025-03-13 12:13:41,113 - INFO - Successfully loaded dataset from 'C:\Users\ranes\Desktop\DMML\data\merged_data.csv'.
+2025-03-13 12:13:41,404 - INFO - Our dataset consists of 536641 rows and 9 columns.
+2025-03-13 12:13:48,962 - INFO - Histogram saved at 'C:\Users\ranes\Desktop\DMML\images\histogram.png'.
+2025-03-13 12:13:49,709 - INFO - PDF report saved at 'C:\Users\ranes\Desktop\DMML\reports\Data Quality Report Before PreProcessing.pdf'.
+2025-03-13 12:14:08,666 - Initial data shape: (536641, 9)
+2025-03-13 12:14:08,899 - Missing values per column: 
+InvoiceNo           0
+StockCode           0
+Description      1454
+Quantity            0
+InvoiceDate         0
+UnitPrice           0
+CustomerID     135037
+Country             0
+Active              0
+dtype: int64
+2025-03-13 12:14:09,157 - Data shape after dropping missing values: (401604, 9)
+2025-03-13 12:14:10,121 - Data shape after filtering numeric StockCode: (366179, 9)
+2025-03-13 12:14:10,346 - Number of CustomerIDs marked as both Active and Inactive: 1878
+2025-03-13 12:14:10,548 - Data shape after removing conflicting CustomerIDs: (93186, 9)
+2025-03-13 12:14:11,293 - Preprocessed data saved successfully.
+2025-03-13 12:14:11,298 - PDF report generated successfully.
+2025-03-13 12:19:51,719 - Initial data shape: (536641, 9)
+2025-03-13 12:19:51,886 - Missing values per column: 
+Description      1454
+CustomerID     135037
+dtype: int64
+2025-03-13 12:19:52,114 - Data shape after dropping missing values: (401604, 9)
+2025-03-13 12:19:52,823 - Data shape after filtering numeric StockCode: (366179, 9)
+2025-03-13 12:19:53,008 - Number of CustomerIDs marked as both Active and Inactive: 1878
+2025-03-13 12:19:53,073 - Data shape after removing conflicting CustomerIDs: (93186, 9)
+2025-03-13 12:19:53,679 - Preprocessed data saved successfully.
+2025-03-13 12:19:53,683 - PDF report generated successfully.
+2025-03-13 12:40:03,230 - Initial data shape: (536641, 9)
+2025-03-13 12:40:03,459 - Missing values per column: 
+Description      1454
+CustomerID     135037
+dtype: int64
+2025-03-13 12:40:03,722 - Data shape after dropping missing values: (401604, 9)
+2025-03-13 12:40:04,362 - Number of rows dropped due to inconsistent StockCode: 35425
+2025-03-13 12:40:04,362 - Data shape after filtering numeric StockCode: (366179, 9)
+2025-03-13 12:40:04,541 - Number of CustomerIDs marked as both Active and Inactive: 1878
+2025-03-13 12:40:04,659 - Number of rows dropped due to incorrect CustomerIDs: 272993
+2025-03-13 12:40:04,659 - Data shape after removing conflicting CustomerIDs: (93186, 9)
+2025-03-13 12:40:05,279 - Preprocessed data saved successfully.
+2025-03-13 12:40:05,307 - PDF report generated successfully.
+2025-03-13 21:14:01,758 - Loading dataset.
+2025-03-13 21:14:02,847 - Creating heatmap.
+2025-03-13 21:24:26,442 - Loading dataset.
+2025-03-13 21:24:27,465 - Creating heatmap.
+2025-03-13 21:24:29,717 - Preprocessing data.
+2025-03-13 21:24:31,219 - Removed highly correlated features: []
+2025-03-13 21:28:09,094 - Loading dataset.
+2025-03-13 21:28:10,099 - Creating heatmap.
+2025-03-13 21:28:11,933 - Preprocessing data.
+2025-03-13 21:28:13,336 - Removed highly correlated features: []
+2025-03-13 21:28:13,492 - 'Status' column not found. Proceeding without it.
+2025-03-13 21:28:13,492 - Performed PCA for feature extraction.
+2025-03-13 21:28:17,920 - Saved processed dataset.
+2025-03-13 21:28:17,921 - Final dataframe columns: ['PC1', 'PC2', 'PC3', 'PC4', 'PC5']
+2025-03-13 21:35:13,170 - Loading dataset.
+2025-03-13 21:35:14,403 - Creating heatmap.
+2025-03-13 21:35:16,716 - Preprocessing data.
+2025-03-13 21:35:18,419 - Removed highly correlated features: []
+2025-03-13 21:35:18,419 - Feature selection completed.
+2025-03-13 21:35:27,888 - Saved processed dataset.
+2025-03-13 21:35:27,888 - Final dataframe columns: ['InvoiceNo', 'StockCode', 'Description', 'Quantity', 'InvoiceDate', 'UnitPrice', 'CustomerID', 'Country', 'Active']
+2025-03-13 21:39:07,782 - Loading processed dataset for model training.
+2025-03-13 21:39:08,915 - Training Random Forest model.
+2025-03-13 21:40:27,366 - Loading processed dataset.
+2025-03-13 21:40:28,662 - Dataset columns: ['InvoiceNo', 'StockCode', 'Description', 'Quantity', 'InvoiceDate', 'UnitPrice', 'CustomerID', 'Country', 'Active']
+2025-03-13 21:40:28,663 - Training Random Forest model.
+2025-03-13 21:40:28,663 - Error: 'Status' column not found in dataset.
+2025-03-13 21:40:28,663 - Error during execution: "'Status' column not found in dataset."
+2025-03-13 21:44:22,829 - Loading dataset.
+2025-03-13 21:44:23,858 - Creating heatmap.
+2025-03-13 21:44:26,120 - Preprocessing data.
+2025-03-13 21:44:26,377 - 'Status' column missing in input dataset. Aborting preprocessing.
+2025-03-13 21:51:33,937 - Loading dataset.
+2025-03-13 21:51:34,172 - Creating heatmap.
+2025-03-13 21:51:35,155 - Preprocessing data.
+2025-03-13 21:53:17,875 - Loading dataset.
+2025-03-13 21:53:18,107 - Creating heatmap.
+2025-03-13 21:53:19,106 - Preprocessing data.
+2025-03-13 21:53:19,438 - Removed highly correlated features: []
+2025-03-13 21:53:19,522 - Selected top features: ['InvoiceNo', 'StockCode', 'Description', 'Quantity', 'InvoiceDate', 'UnitPrice', 'CustomerID', 'Country']
+2025-03-13 21:53:19,522 - Feature selection completed.
+2025-03-13 21:53:21,632 - Final dataframe columns: ['InvoiceNo', 'StockCode', 'Description', 'Quantity', 'InvoiceDate', 'UnitPrice', 'CustomerID', 'Country', 'Status']
+2025-03-13 21:53:33,188 - Loading processed dataset.
+2025-03-13 21:53:33,611 - Dataset columns: ['InvoiceNo', 'StockCode', 'Description', 'Quantity', 'InvoiceDate', 'UnitPrice', 'CustomerID', 'Country', 'Status']
+2025-03-13 21:53:33,611 - Training Random Forest model.
+2025-03-13 21:53:33,711 - Error during execution: Unknown label type: continuous. Maybe you are trying to fit a classifier, which expects discrete classes on a regression target with continuous values.
+2025-03-13 21:56:55,024 - Loading processed dataset.
+2025-03-13 21:56:55,290 - Dataset columns: ['InvoiceNo', 'StockCode', 'Description', 'Quantity', 'InvoiceDate', 'UnitPrice', 'CustomerID', 'Country', 'Status']
+2025-03-13 21:56:55,291 - Training Random Forest model.
+2025-03-13 21:57:03,393 - Model Accuracy: 0.9954
+2025-03-13 21:57:03,393 - Classification Report:
+              precision    recall  f1-score   support
+
+          -1       0.99      1.00      0.99      5048
+           0       1.00      1.00      1.00     13590
+
+    accuracy                           1.00     18638
+   macro avg       0.99      1.00      0.99     18638
+weighted avg       1.00      1.00      1.00     18638
+
+2025-03-13 21:57:03,396 - Random Forest model training completed successfully.
+2025-03-13 21:59:57,883 - Loading processed dataset.
+2025-03-13 21:59:58,155 - Dataset columns: ['InvoiceNo', 'StockCode', 'Description', 'Quantity', 'InvoiceDate', 'UnitPrice', 'CustomerID', 'Country', 'Status']
+2025-03-13 21:59:58,155 - Training Random Forest model.
+2025-03-13 22:00:06,063 - Model Accuracy: 0.9954
+2025-03-13 22:00:06,063 - Classification Report:
++--------------+--------------------+--------------------+--------------------+--------------------+
+|              |     precision      |       recall       |      f1-score      |      support       |
++--------------+--------------------+--------------------+--------------------+--------------------+
+|      -1      | 0.9868550127525996 | 0.9964342313787639 | 0.9916214884179398 |       5048.0       |
+|      0       | 0.9986707037884942 | 0.9950699043414275 | 0.9968670524492278 |      13590.0       |
+|   accuracy   | 0.9954394248309905 | 0.9954394248309905 | 0.9954394248309905 | 0.9954394248309905 |
+|  macro avg   | 0.9927628582705469 | 0.9957520678600957 | 0.9942442704335839 |      18638.0       |
+| weighted avg | 0.9954704887252258 | 0.9954394248309905 | 0.9954463202231336 |      18638.0       |
++--------------+--------------------+--------------------+--------------------+--------------------+
+2025-03-13 22:00:06,066 - Random Forest model training completed successfully.
+2025-03-13 22:11:14,114 - Loading processed dataset.
+2025-03-13 22:11:14,382 - Dataset columns: ['InvoiceNo', 'StockCode', 'Description', 'Quantity', 'InvoiceDate', 'UnitPrice', 'CustomerID', 'Country', 'Status']
+2025-03-13 22:11:14,382 - Training Random Forest model.
+2025-03-13 22:11:22,072 - Model saved at: C:\Users\ranes\Desktop\DMML\models\trained_model.pkl
+2025-03-13 22:11:22,292 - Model Accuracy: 0.9954
+2025-03-13 22:11:22,292 - Classification Report:
++--------------+--------------------+--------------------+--------------------+--------------------+
+|              |     precision      |       recall       |      f1-score      |      support       |
++--------------+--------------------+--------------------+--------------------+--------------------+
+|      -1      | 0.9868550127525996 | 0.9964342313787639 | 0.9916214884179398 |       5048.0       |
+|      0       | 0.9986707037884942 | 0.9950699043414275 | 0.9968670524492278 |      13590.0       |
+|   accuracy   | 0.9954394248309905 | 0.9954394248309905 | 0.9954394248309905 | 0.9954394248309905 |
+|  macro avg   | 0.9927628582705469 | 0.9957520678600957 | 0.9942442704335839 |      18638.0       |
+| weighted avg | 0.9954704887252258 | 0.9954394248309905 | 0.9954463202231336 |      18638.0       |
++--------------+--------------------+--------------------+--------------------+--------------------+
+2025-03-13 22:11:22,295 - Random Forest model training completed successfully.
