@@ -8,10 +8,23 @@ LOG_FILE = "execution.log"  # Updated log file name
 logging.basicConfig(filename=LOG_FILE, level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 
 # File paths
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b67220bf321739d3fe3dba0b615aefa8ef39b24d
 CSV_FILE = r"data\ecom_transactions.csv"  # Updated CSV file path
 DB_FILE = "customer_churn.db"
 TABLE_NAME = "transactions"  # SQLite table to read data from
 OUTPUT_CSV = r"data\merged_data.csv"  # New CSV file for the joined data
+<<<<<<< HEAD
+=======
+=======
+CSV_FILE = r"C:\Users\ranes\Desktop\DMML\data\ecom_transactions.csv"  # Updated CSV file path
+DB_FILE = "customer_churn.db"
+TABLE_NAME = "transactions"  # SQLite table to read data from
+OUTPUT_CSV = r"C:\Users\ranes\Desktop\DMML\data\merged_data.csv"  # New CSV file for the joined data
+>>>>>>> 4938a3879c8c6939f02eb9ea837b0ea36efa3a5c
+>>>>>>> b67220bf321739d3fe3dba0b615aefa8ef39b24d
 
 def log_message(message, level="info"):
     """Logs a message to the execution.log file."""

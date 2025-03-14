@@ -6,9 +6,21 @@ from fpdf import FPDF
 from io import StringIO
 
 # File paths
+<<<<<<< HEAD
 DATA_FILE = r"data\merged_data.csv"
 HISTOGRAM_PATH = r"images\histogram.png"
 PDF_REPORT_PATH = r"reports\Data Quality Report Before PreProcessing.pdf"
+=======
+<<<<<<< HEAD
+DATA_FILE = r"data\merged_data.csv"
+HISTOGRAM_PATH = r"images\histogram.png"
+PDF_REPORT_PATH = r"reports\Data Quality Report Before PreProcessing.pdf"
+=======
+DATA_FILE = r"C:\Users\ranes\Desktop\DMML\data\merged_data.csv"
+HISTOGRAM_PATH = r"C:\Users\ranes\Desktop\DMML\images\histogram.png"
+PDF_REPORT_PATH = r"C:\Users\ranes\Desktop\DMML\reports\Data Quality Report Before PreProcessing.pdf"
+>>>>>>> 4938a3879c8c6939f02eb9ea837b0ea36efa3a5c
+>>>>>>> b67220bf321739d3fe3dba0b615aefa8ef39b24d
 
 # Ensure output directories exist
 os.makedirs(os.path.dirname(HISTOGRAM_PATH), exist_ok=True)

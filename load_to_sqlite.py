@@ -7,7 +7,15 @@ LOG_FILE = "execution.log"  # Renamed log file
 logging.basicConfig(filename=LOG_FILE, level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 
 # File paths
+<<<<<<< HEAD
 CSV_FILE = "data/transactions.csv"
+=======
+<<<<<<< HEAD
+CSV_FILE = "data/transactions.csv"
+=======
+CSV_FILE = "C:/Users/ranes/Desktop/DMML/data/transactions.csv"
+>>>>>>> 4938a3879c8c6939f02eb9ea837b0ea36efa3a5c
+>>>>>>> b67220bf321739d3fe3dba0b615aefa8ef39b24d
 DB_FILE = "customer_churn.db"
 TABLE_NAME = "transactions"
 
@@ -19,9 +27,18 @@ def load_csv_to_sqlite(csv_file, db_file, table_name):
     cursor = conn.cursor()
     
     # Step 2: Create table if it does not exist
+<<<<<<< HEAD
 
     cursor.execute("DROP TABLE IF EXISTS transactions")
 
+=======
+<<<<<<< HEAD
+
+    cursor.execute("DROP TABLE IF EXISTS transactions")
+
+=======
+>>>>>>> 4938a3879c8c6939f02eb9ea837b0ea36efa3a5c
+>>>>>>> b67220bf321739d3fe3dba0b615aefa8ef39b24d
     create_table_query = f"""
     CREATE TABLE transactions (
         InvoiceNo VARCHAR(20) NOT NULL,

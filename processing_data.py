@@ -8,10 +8,23 @@ from sklearn.preprocessing import LabelEncoder, StandardScaler
 from sklearn.feature_selection import SelectKBest, f_classif
 
 # Paths
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b67220bf321739d3fe3dba0b615aefa8ef39b24d
 data_path = r"data\preprocessed_data.csv"
 processed_data_path = r"data\processed_data.csv"
 log_path = r"execution.log"
 image_path = r"images\heatmap.png"
+<<<<<<< HEAD
+=======
+=======
+data_path = r"C:\Users\ranes\Desktop\DMML\data\preprocessed_data.csv"
+processed_data_path = r"C:\Users\ranes\Desktop\DMML\data\processed_data.csv"
+log_path = r"C:\Users\ranes\Desktop\DMML\execution.log"
+image_path = r"C:\Users\ranes\Desktop\DMML\images\heatmap.png"
+>>>>>>> 4938a3879c8c6939f02eb9ea837b0ea36efa3a5c
+>>>>>>> b67220bf321739d3fe3dba0b615aefa8ef39b24d
 
 # Setup logging
 logging.basicConfig(filename=log_path, level=logging.INFO, format='%(asctime)s - %(message)s')

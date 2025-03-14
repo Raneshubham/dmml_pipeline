@@ -3,12 +3,29 @@ import re
 import logging
 from fpdf import FPDF
 import os
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+import shutil
+>>>>>>> b67220bf321739d3fe3dba0b615aefa8ef39b24d
 
 # File paths
 data_file = r"data\merged_data.csv"
 log_file = r"execution.log"
 output_file = r"data\preprocessed_data.csv"
+<<<<<<< HEAD
 pdf_report = r"C:reports\Data Quality Report After PreProcessing.pdf"
+=======
+pdf_report = r"reports\Data Quality Report After PreProcessing.pdf"
+=======
+
+# File paths
+data_file = r"C:\Users\ranes\Desktop\DMML\data\merged_data.csv"
+log_file = r"C:\Users\ranes\Desktop\DMML\execution.log"
+output_file = r"C:\Users\ranes\Desktop\DMML\data\preprocessed_data.csv"
+pdf_report = r"C:\Users\ranes\Desktop\DMML\reports\Data Quality Report After PreProcessing.pdf"
+>>>>>>> 4938a3879c8c6939f02eb9ea837b0ea36efa3a5c
+>>>>>>> b67220bf321739d3fe3dba0b615aefa8ef39b24d
 
 # Configure logging
 logging.basicConfig(filename=log_file, level=logging.INFO, format='%(asctime)s - %(message)s')
@@ -17,6 +34,27 @@ def log(message):
     logging.info(message)
     print(message)
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+# Simulate a list of files with timestamps
+files = [
+    "data_2024-01-15.csv", "data_2024-02-10.csv", "data_2024-02-28.csv",
+    "data_2024-03-05.csv", "data_2024-03-21.csv", "data_2024-04-12.csv"
+]
+
+# Create bucketed directories if not exist
+for file in files:
+    date_str = file.split("_")[1].split(".")[0]  # Extract date part
+    date = pd.to_datetime(date_str)
+    month_folder = f"data_buckets/{date.strftime('%Y-%m')}"  # Format as '2024-01'
+
+    os.makedirs(month_folder, exist_ok=True)  # Create the folder if it doesn't exist
+    shutil.move(file, os.path.join(month_folder, file))
+
+=======
+>>>>>>> 4938a3879c8c6939f02eb9ea837b0ea36efa3a5c
+>>>>>>> b67220bf321739d3fe3dba0b615aefa8ef39b24d
 # Load data
 data_df = pd.read_csv(data_file)
 initial_shape = data_df.shape  # Store initial shape
