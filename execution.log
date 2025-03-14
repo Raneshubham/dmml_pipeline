@@ -1,0 +1,40 @@
+2025-03-14 17:38:18,221 - INFO - CSV file loaded successfully.
+2025-03-14 17:38:19,002 - INFO - Data from data/transactions.csv loaded into transactions in customer_churn.db
+2025-03-14 17:38:22,145 - INFO - Ingestion process started.
+2025-03-14 17:38:22,504 - INFO - Loaded 270953 rows from CSV file 'data\ecom_transactions.csv'.
+2025-03-14 17:38:23,582 - INFO - Loaded 270956 rows from SQLite table 'transactions'.
+2025-03-14 17:38:24,216 - INFO - Full Outer Joined data has 536641 rows.
+2025-03-14 17:38:26,716 - INFO - Saved 536641 rows to CSV file 'data\merged_data.csv'.
+2025-03-14 17:38:26,732 - INFO - Ingestion process completed successfully.
+2025-03-14 17:42:48,299 - INFO - Successfully loaded dataset from 'data\merged_data.csv'.
+2025-03-14 17:42:48,448 - INFO - Our dataset consists of 536641 rows and 9 columns.
+2025-03-14 17:42:51,230 - INFO - Histogram saved at 'images\histogram.png'.
+2025-03-14 17:42:51,518 - INFO - PDF report saved at 'reports\Data Quality Report Before PreProcessing.pdf'.
+2025-03-14 17:45:18,888 - Initial data shape: (536641, 9)
+2025-03-14 17:45:19,010 - Missing values per column: 
+Description      1454
+CustomerID     135037
+dtype: int64
+2025-03-14 17:45:19,155 - Data shape after dropping missing values: (401604, 9)
+2025-03-14 17:45:19,480 - Number of rows dropped due to inconsistent StockCode: 35425
+2025-03-14 17:45:19,480 - Data shape after filtering numeric StockCode: (366179, 9)
+2025-03-14 17:45:19,582 - Number of CustomerIDs marked as both Active and Inactive: 1878
+2025-03-14 17:45:19,623 - Number of rows dropped due to incorrect CustomerIDs: 272993
+2025-03-14 17:45:19,624 - Data shape after removing conflicting CustomerIDs: (93186, 9)
+2025-03-14 17:45:19,930 - Preprocessed data saved successfully.
+2025-03-14 17:45:19,935 - PDF report generated successfully.
+2025-03-14 17:51:28,933 - Loading dataset.
+2025-03-14 17:51:29,085 - Creating heatmap.
+2025-03-14 17:51:29,652 - Preprocessing data.
+2025-03-14 17:51:29,773 - Removed highly correlated features: []
+2025-03-14 17:51:29,801 - Selected top features: ['InvoiceNo', 'StockCode', 'Description', 'Quantity', 'InvoiceDate', 'UnitPrice', 'CustomerID', 'Country']
+2025-03-14 17:51:29,801 - Feature selection completed.
+2025-03-14 17:51:30,665 - Final dataframe columns: ['InvoiceNo', 'StockCode', 'Description', 'Quantity', 'InvoiceDate', 'UnitPrice', 'CustomerID', 'Country', 'Status']
+2025-03-14 21:02:20,592 - INFO - CSV file loaded successfully.
+2025-03-14 21:02:22,356 - INFO - Data from data/transactions.csv loaded into transactions in customer_churn.db
+2025-03-14 21:02:44,947 - INFO - Ingestion process started.
+2025-03-14 21:02:45,417 - INFO - Loaded 270953 rows from CSV file 'data\ecom_transactions.csv'.
+2025-03-14 21:02:46,847 - INFO - Loaded 270956 rows from SQLite table 'transactions'.
+2025-03-14 21:02:48,107 - INFO - Full Outer Joined data has 536641 rows.
+2025-03-14 21:02:51,676 - INFO - Saved 536641 rows to CSV file 'data\merged_data.csv'.
+2025-03-14 21:02:51,677 - INFO - Ingestion process completed successfully.

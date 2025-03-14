@@ -1,0 +1,23 @@
+python --version
+cd Downloads
+ls
+cd dmml_pipeline-main
+dir
+pip install sqlite 
+pip install pandas
+python load_to_sqlite.py
+python load_and_join.py
+pip install matplotlib
+pip install fpdf
+python data_exploration_and_visualization.py
+python data_preprocessing.py
+pip install seaborn
+pip install sklearn
+pip install scikit-learn
+python processing_data.py
+python create_feature_store.py
+pip install numpy
+python -m pip install --upgrade pip setuptools wheel
+pip install numpy --prefer-binary
+pip install feast
+doskey /history > commands.txt
