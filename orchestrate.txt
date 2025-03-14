@@ -1,0 +1,23 @@
+
+'''
+python load_to_sqlite.py
+python load_and_join.py
+pip install matplotlib
+pip install fpdf
+python data_exploration_and_visualization.py
+python data_preprocessing.py
+pip install seaborn
+pip install sklearn
+pip install scikit-learn
+python processing_data.py
+python create_feature_store.py
+
+'''
+
+import subprocess
+
+scripts = ["load_to_sqlite", "load_and_join"]
+
+for script in scripts:
+    print(f"Running {script}...")
+    subprocess.run(["python", script])  # Runs each script
